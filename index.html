@@ -10,21 +10,26 @@
     <title>Meu Portfólio</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <h1>Bem vindo, me chamo Victor Mello</h1>
 
       <nav>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <a href="#lotofacil">Protótipo Lotofácil</a>
+          </li>
+          <li>
+            <a href=""></a>
+          </li>
+          <li>
+            <a href=""></a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <section class="descricao">
       <img
-        id="foto"
         src="./image/foto.jpeg"
         alt="Victor Pinheiro Mello"
         title="Victor Pinheiro Mello"
@@ -37,8 +42,9 @@
         <a
           href="https://www.betrybe.com/?utm_medium=cpc&utm_source=google&utm_campaign=Brand&utm_content=ad03_din_h&gclid=Cj0KCQjwmouZBhDSARIsALYcouovLWGibLqPt4bFjw-VTar1N15cfPDhctwbZ3Z4BU4VW2w6PYCFEPQaAgbtEALw_wcB"
           target="_blank"
-          >Trybe</a
         >
+          Trybe
+        </a>
       </p>
     </section>
 
@@ -50,31 +56,61 @@
       </ul>
     </section>
 
-    <main></main>
+    <main>
+      <header>
+        <h2>Projetos</h2>
+      </header>
+
+      <article id="lotofacil">
+        <header>
+          <h4>Protótipo Lotofácil</h4>
+        </header>
+
+        <div class="content">
+          <img
+            src="./image/lotofacil.png"
+            alt="Print do protótipo"
+            title="Protótipo lotofácil"
+          />
+          <p>
+            Site protótipo feito em HTML, CSS e JavaScript para gerar
+            números vencedores na lotofácil.
+            <a
+              href="https://prototipo-loto-facil.vercel.app"
+              target="_blank"
+              >Teste Aqui!</a
+            >
+          </p>
+        </div>
+      </article>
+    </main>
 
     <footer>
       <aside class="contatos">
-        <a href="https://github.com/VictorPMello" target="_blank"
-          ><img
+        <a href="https://github.com/VictorPMello" target="_blank">
+          <img
             src="./image/github-icon.svg"
             alt="Meu Github"
             title="Meu Gitbub"
-        /></a>
+          />
+        </a>
 
         <a
           href="https://www.linkedin.com/in/victor-pinheiro-mello-89473b1b9/"
           target="_blank"
-          ><img
+        >
+          <img
             src="./image/linkedin-icon.svg"
             alt="Meu Linkedin"
             title="Meu Linkedin"
-        /></a>
+          />
+        </a>
       </aside>
 
       <div class="top">
-        <a href="#foto"
-          ><img src="./image/arrow-up.svg" alt="Seta para cima"
-        /></a>
+        <a href="#top">
+          <img src="./image/arrow.svg" alt="Seta para cima" />
+        </a>
       </div>
     </footer>
   </body>
