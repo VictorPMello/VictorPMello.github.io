@@ -17,9 +17,8 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
+
   background-color: var(--green-50);
 
   text-align: center;
@@ -30,11 +29,30 @@ body {
 }
 
 header,
+main,
+section,
+footer {
+  max-width: 100vw;
+}
+
+header,
 nav,
 main,
 section,
 footer {
   padding: 0 2%;
+  margin: 0 0 3rem;
+}
+
+header,
+.descricao,
+.skills,
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1,
@@ -71,11 +89,14 @@ ul {
   list-style-position: inside;
 }
 
+/* END CONFIG DEFAULT  */
+
 header {
-  display: flex;
-  justify-content: space-evenly;
   border-bottom: 0.2rem solid var(--gray-50);
-  margin-bottom: 2rem;
+}
+
+nav {
+  margin: 0;
 }
 
 ul li {
@@ -86,4 +107,12 @@ ul li {
 
 header ul li:hover {
   background-color: var(--black-100);
+}
+
+/* END CONFIG HEADER */
+
+section.descricao img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 5rem;
 }
