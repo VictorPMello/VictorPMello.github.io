@@ -77,3 +77,13 @@ header {
   border-bottom: 0.2rem solid var(--gray-50);
   margin-bottom: 2rem;
 }
+
+ul li {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: background 0.3s ease-out;
+}
+
+header ul li:hover {
+  background-color: var(--black-100);
+}
