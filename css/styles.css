@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Nunito:wght@400;600&display=swap');
+
+:root {
+  --green-100: #16db65;
+  --green-75: #058c42;
+  --green-50: #04471c;
+  --black-100: #020202;
+  --yellow-100: #fff033;
+
+  /* 
+    font-family: 'Lexend', sans-serif; Main Text 400
+    font-family: 'Nunito', sans-serif;  600 - H1 | 400 - H2,  H3
+  */
+
+  font: 400 62.5% Lexend, sans-serif;
+}
