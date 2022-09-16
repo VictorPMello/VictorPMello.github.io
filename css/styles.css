@@ -2,15 +2,78 @@
 
 :root {
   --green-100: #16db65;
-  --green-75: #058c42;
   --green-50: #04471c;
+  --white-100: #ffffff;
+  --gray-50: #d8d8d8;
   --black-100: #020202;
-  --yellow-100: #fff033;
+
+  font: 400 62.5% Lexend, sans-serif;
 
   /* 
     font-family: 'Lexend', sans-serif; Main Text 400
     font-family: 'Nunito', sans-serif;  600 - H1 | 400 - H2,  H3
+    font-size: 62.5% == 10px;
   */
+}
 
-  font: 400 62.5% Lexend, sans-serif;
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--green-50);
+
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+section,
+footer {
+  padding: 0 2%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 600 2.2rem Nunito, sans-serif;
+  color: var(--green-100);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p,
+span,
+strong,
+a,
+button {
+  font-size: 2rem;
+  color: var(--gray-50);
+  text-decoration: none;
+}
+
+a {
+  color: var(--white-100);
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0.2rem solid var(--gray-50);
+  margin-bottom: 2rem;
 }
