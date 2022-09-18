@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Nunito:wght@400;600&display=swap');
 
 :root {
-  --green-100: #16db65;
-  --green-50: #04471c;
-  --white-100: #ffffff;
-  --gray-50: #d8d8d8;
-  --black-100: #020202;
+  --gray-main: #f8f9fa;
+  --gray-secondary: #ced4da;
+  --black: #393d3f;
+  --green: #0cce6b;
 
   font: 400 62.5% Lexend, sans-serif;
 
@@ -20,24 +19,66 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-
   overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font: 600 4rem Nunito, sans-serif;
+  color: var(--green);
+}
+
+h2,
+h3 {
+  font-weight: 400;
+}
+
+p,
+a,
+button,
+textarea,
+span,
+strong {
+  font-size: 2rem;
+  color: var(--black);
+  text-decoration: none;
+}
+
+p > a {
+  color: var(--green);
+  font-weight: 600;
 }
 
 header#inicio,
 footer {
   width: 100vw;
-
   display: flex;
   align-items: center;
-
   position: fixed;
-  /* background-color: #16db65; */
+  background-color: var(--gray-secondary);
 }
 
 header#inicio {
   justify-content: center;
+  gap: 20%;
   top: 0;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  margin: 1.2rem 0;
+}
+
+header nav ul li {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: background 0.3s ease-in;
+}
+
+header nav ul li:hover {
+  background-color: var(--gray-main);
 }
 
 footer {
@@ -53,12 +94,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
   min-width: 100vw;
+  background-color: var(--gray-main);
+}
+
+.descricao {
+  flex-direction: column;
+  gap: 5rem;
 }
 
 img {
-  /* display: none; */
   width: 50px;
 }
