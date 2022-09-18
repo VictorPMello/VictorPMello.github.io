@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Nunito:wght@400;600&display=swap');
 
+/* IMPORT GOOGLE FONTS */
+
 :root {
   --gray-main: #f8f9fa;
   --gray-secondary: #ced4da;
@@ -15,12 +17,16 @@
   */
 }
 
+/* ROOT END */
+
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   overflow: hidden;
 }
+
+/* Reset CSS, Scroll END */
 
 h1,
 h2,
@@ -50,6 +56,8 @@ p > a {
   font-weight: 600;
 }
 
+/* Styles Fonts  END */
+
 header#inicio,
 footer {
   width: 100vw;
@@ -58,6 +66,8 @@ footer {
   position: fixed;
   background-color: var(--gray-secondary);
 }
+
+/* Header and Footer Position END */
 
 header#inicio {
   justify-content: center;
@@ -81,13 +91,11 @@ header nav ul li:hover {
   background-color: var(--gray-main);
 }
 
-footer {
-  justify-content: space-around;
-  bottom: 0;
-}
+/* Header END */
 
 main {
   display: flex;
+  text-align: center;
 }
 
 section {
@@ -99,9 +107,39 @@ section {
   background-color: var(--gray-main);
 }
 
+/* Section Position END */
+
 .descricao {
   flex-direction: column;
   gap: 5rem;
+}
+
+.descricao > div {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.descricao img {
+  width: 25rem;
+  border-radius: 5rem;
+}
+
+.descricao p {
+  width: 50%;
+}
+
+.descricao p::first-letter {
+  font-size: 3.5rem;
+  color: var(--green);
+  font-weight: 900;
+}
+
+footer {
+  justify-content: space-around;
+  bottom: 0;
 }
 
 img {
