@@ -111,7 +111,7 @@ section {
 
 .descricao {
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .descricao > div {
@@ -128,7 +128,7 @@ section {
 }
 
 .descricao p {
-  width: 50%;
+  width: 55%;
   text-align: right;
 }
 
@@ -142,7 +142,7 @@ article p::first-letter {
 /* Section descricao END */
 
 .skills {
-  gap: 5rem;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
@@ -177,9 +177,25 @@ article img {
 
 footer {
   justify-content: space-around;
+  padding: 1rem 0;
   bottom: 0;
 }
 
-img {
-  width: 50px;
+footer a {
+  margin: 0 0.5rem;
+}
+
+footer img {
+  width: 3rem;
+  transition: all 0.3s ease-in;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+
+footer img:hover {
+  background: var(--gray-main);
+}
+
+footer .inicio img {
+  transform: rotate(270deg);
 }
