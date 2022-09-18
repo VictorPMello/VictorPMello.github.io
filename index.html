@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header id="top">
+    <header id="inicio">
       <h1>Bem vindo, me chamo Victor Mello</h1>
 
       <nav>
@@ -30,61 +30,78 @@
       </nav>
     </header>
 
-    <section class="descricao">
-      <img
-        src="./image/foto.jpeg"
-        alt="Victor Pinheiro Mello"
-        title="Victor Pinheiro Mello"
-      />
-      <p>
-        Tenho 24 anos e sou de Feira de Santana na Bahia. Conheci
-        programação em 2019 quando fiz um curso técnico na minha
-        cidade. Meu objetivo porfissional é me tornar uma pessoa
-        desenvolvedora web FullStack. Atualmente estou estudando na
-        <a
-          href="https://www.betrybe.com/?utm_medium=cpc&utm_source=google&utm_campaign=Brand&utm_content=ad03_din_h&gclid=Cj0KCQjwmouZBhDSARIsALYcouovLWGibLqPt4bFjw-VTar1N15cfPDhctwbZ3Z4BU4VW2w6PYCFEPQaAgbtEALw_wcB"
-          target="_blank"
-        >
-          Trybe
-        </a>
-      </p>
-    </section>
-
-    <section class="skills">
-      <ul>
-        <li><strong>html</strong></li>
-        <li><strong>css</strong></li>
-        <li><strong>javascript</strong></li>
-      </ul>
-    </section>
-
     <main>
-      <header>
-        <h2>Projetos</h2>
-      </header>
+      <section id="descricao">
+        <img
+          src="./image/foto.jpeg"
+          alt="Victor Pinheiro Mello"
+          title="Victor Pinheiro Mello"
+        />
+        <p>
+          Tenho 24 anos e sou de Feira de Santana na Bahia. Conheci
+          programação em 2019 quando fiz um curso técnico na minha
+          cidade. Meu objetivo porfissional é me tornar uma pessoa
+          desenvolvedora web FullStack. Atualmente estou estudando na
+          <a
+            href="https://www.betrybe.com/?utm_medium=cpc&utm_source=google&utm_campaign=Brand&utm_content=ad03_din_h&gclid=Cj0KCQjwmouZBhDSARIsALYcouovLWGibLqPt4bFjw-VTar1N15cfPDhctwbZ3Z4BU4VW2w6PYCFEPQaAgbtEALw_wcB"
+            target="_blank"
+          >
+            Trybe
+          </a>
+        </p>
+      </section>
 
-      <article id="lotofacil">
-        <header>
-          <h4>Protótipo Lotofácil</h4>
-        </header>
-
-        <div class="content">
+      <section id="skills">
+        <div>
           <img
-            src="./image/lotofacil.png"
-            alt="Print do protótipo"
-            title="Protótipo lotofácil"
+            src="./image/skills-html.svg"
+            alt="Hard-Skill HTML"
+            title="Hard-Skill HTML"
           />
-          <p>
-            Site protótipo feito em HTML, CSS e JavaScript para gerar
-            números vencedores na lotofácil.
-            <a
-              href="https://prototipo-loto-facil.vercel.app"
-              target="_blank"
-              >Teste Aqui!</a
-            >
-          </p>
+          <strong>html</strong>
         </div>
-      </article>
+        <div>
+          <img
+            src="./image/skills-css.svg"
+            alt="Hard-Skill CSS"
+            title="Hard-Skill CSS"
+          />
+          <strong>css</strong>
+        </div>
+        <div>
+          <img
+            src="./image/skills-javascript.svg"
+            alt="Hard-Skill JavaScript"
+            title="Hard-Skill JavaScript"
+          />
+          <strong>javascript</strong>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <article id="lotofacil">
+          <header>
+            <h4>Protótipo Lotofácil</h4>
+          </header>
+
+          <div class="content">
+            <img
+              src="./image/lotofacil.png"
+              alt="Print do protótipo"
+              title="Protótipo lotofácil"
+            />
+            <p>
+              Site protótipo feito em HTML, CSS e JavaScript para
+              gerar números vencedores na lotofácil.
+              <a
+                href="https://prototipo-loto-facil.vercel.app"
+                target="_blank"
+                >Teste Aqui!</a
+              >
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
@@ -120,8 +137,8 @@
         </a>
       </aside>
 
-      <div class="top">
-        <a href="#top">
+      <div class="inicio">
+        <a href="#descricao">
           <img src="./image/arrow.svg" alt="Seta para cima" />
         </a>
       </div>
