@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Nunito:wght@400;600&display=swap');
 
+/* IMPORT GOOGLE FONTS */
+
 :root {
-  --green-100: #16db65;
-  --green-50: #04471c;
-  --white-100: #ffffff;
-  --gray-50: #d8d8d8;
-  --black-100: #020202;
+  --gray-main: #f8f9fa;
+  --gray-secondary: #ced4da;
+  --black: #393d3f;
+  --green: #0cce6b;
 
   font: 400 62.5% Lexend, sans-serif;
 
@@ -16,28 +17,162 @@
   */
 }
 
+/* ROOT END */
+
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-
   overflow: hidden;
 }
+
+/* Reset CSS, Scroll END */
+
+h1,
+h2,
+h3 {
+  font: 600 4rem Nunito, sans-serif;
+  color: var(--green);
+}
+
+h2,
+h3 {
+  font-weight: 400;
+}
+
+p,
+a,
+button,
+textarea,
+span,
+strong {
+  font-size: 2rem;
+  color: var(--black);
+  text-decoration: none;
+}
+
+p > a {
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* Styles Fonts  END */
 
 header#inicio,
 footer {
   width: 100vw;
-
   display: flex;
   align-items: center;
-
   position: fixed;
-  /* background-color: #16db65; */
+  background-color: var(--gray-secondary);
 }
+
+/* Header and Footer Position END */
 
 header#inicio {
   justify-content: center;
+  gap: 20%;
   top: 0;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  margin: 1.2rem 0;
+}
+
+header nav ul li {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: background 0.3s ease-in;
+}
+
+header nav ul li:hover {
+  background-color: var(--gray-main);
+}
+
+/* Header END */
+
+main {
+  display: flex;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 100vw;
+  background-color: var(--gray-main);
+}
+
+/* Section Position END */
+
+.descricao {
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.descricao > div {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.descricao img {
+  width: 25rem;
+  border-radius: 5rem;
+}
+
+.descricao p {
+  width: 50%;
+  text-align: right;
+}
+
+.descricao p::first-letter,
+article p::first-letter {
+  font-size: 3.5rem;
+  color: var(--green);
+  font-weight: 900;
+}
+
+/* Section descricao END */
+
+.skills {
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.skills div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.skills img {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+/* Sections skills END */
+
+article {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  gap: 3rem;
+}
+
+article img {
+  width: 60vw;
+  height: 40vh;
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -45,20 +180,6 @@ footer {
   bottom: 0;
 }
 
-main {
-  display: flex;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 100vh;
-  min-width: 100vw;
-}
-
 img {
-  /* display: none; */
   width: 50px;
 }
