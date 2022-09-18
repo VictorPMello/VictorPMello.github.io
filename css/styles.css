@@ -129,9 +129,11 @@ section {
 
 .descricao p {
   width: 50%;
+  text-align: right;
 }
 
-.descricao p::first-letter {
+.descricao p::first-letter,
+article p::first-letter {
   font-size: 3.5rem;
   color: var(--green);
   font-weight: 900;
@@ -157,6 +159,21 @@ section {
 }
 
 /* Sections skills END */
+
+article {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  gap: 3rem;
+}
+
+article img {
+  width: 60vw;
+  height: 40vh;
+  margin-bottom: 2rem;
+}
 
 footer {
   justify-content: space-around;
