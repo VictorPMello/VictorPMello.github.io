@@ -16,95 +16,49 @@
   */
 }
 
-body {
-  height: 100vh;
-  background-color: var(--green-50);
-
-  text-align: center;
-
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  overflow: hidden;
 }
 
-header#top,
-main,
-section,
+header#inicio,
 footer {
-  max-width: 100vw;
-  border-bottom: 0.2rem solid var(--gray-50);
-  padding: 1.5rem 2%;
-}
+  width: 100vw;
 
-header,
-.descricao,
-.skills,
-footer {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  /* background-color: #16db65; */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font: 600 2.2rem Nunito, sans-serif;
-  color: var(--green-100);
+header#inicio {
+  justify-content: center;
+  top: 0;
 }
 
-h1 {
-  font-size: 3rem;
+footer {
+  justify-content: space-around;
+  bottom: 0;
 }
 
-p,
-span,
-strong,
-a,
-button {
-  font-size: 2rem;
-  color: var(--gray-50);
-  text-decoration: none;
+main {
+  display: flex;
 }
 
-a {
-  color: var(--white-100);
-  font-weight: 900;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  min-width: 100vw;
 }
 
-ul {
-  list-style-type: none;
-  list-style-position: inside;
+img {
+  /* display: none; */
+  width: 50px;
 }
-
-/* END CONFIG DEFAULT  */
-
-nav {
-  margin: 0;
-}
-
-ul li {
-  padding: 0.5rem;
-  border-radius: 1rem;
-  transition: background 0.3s ease-out;
-}
-
-header ul li:hover {
-  background-color: var(--black-100);
-}
-
-/* END CONFIG HEADER */
-
-section.descricao img {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 5rem;
-}
-
-/* END CONFIG SECTION.DESCRICAO */
-
-/* This is a test */
