@@ -98,7 +98,7 @@ main {
   text-align: center;
 }
 
-section {
+article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +107,7 @@ section {
   background-color: var(--gray-main);
 }
 
-/* Section Position END */
+/* Article Position END */
 
 .descricao {
   flex-direction: column;
@@ -133,7 +133,7 @@ section {
 }
 
 .descricao p::first-letter,
-article p::first-letter {
+section p::first-letter {
   font-size: 3.5rem;
   color: var(--green);
   font-weight: 900;
@@ -160,7 +160,7 @@ article p::first-letter {
 
 /* Sections skills END */
 
-article {
+section {
   display: flex;
   flex-direction: column;
   min-width: 100vw;
@@ -169,7 +169,7 @@ article {
   gap: 3rem;
 }
 
-article img {
+section img {
   width: 60vw;
   height: 40vh;
   margin-bottom: 2rem;
